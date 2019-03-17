@@ -5,18 +5,23 @@
   "description": "A demo app with Protractor tests",
   "scripts": {
     "start": "node app/expressserver.js",
-    "test": "node_modules/.bin/protractor test/conf.js"
+    "test": "node_modules/.bin/protractor test/conf.js",
+    "test-browserlog": "node_modules/.bin/protractor howtos/browserlog/conf.js",
+    "test-network": "node_modules/.bin/protractor howtos/network/conf.js",
+    "test-screenshot": "node_modules/.bin/protractor howtos/screenshot/conf.js",
+    "test-ff-profile": "node_modules/.bin/protractor howtos/setFirefoxProfile/conf.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/juliemr/protractor-demo"
   },
   "dependencies": {
-    "express": "~3.4.0",
-    "protractor": "2.1.0",
+    "express": "^4.16.4",
+    "firefox-profile": "^1.2.0",
     "mkdirp": "~0.3.5",
-    "q": "1.0.0",
-    "firefox-profile": "0.3.4"
+    "node-gyp": "^3.8.0",
+    "protractor": "^5.4.2",
+    "q": "1.0.0"
   },
   "license": "MIT"
 }

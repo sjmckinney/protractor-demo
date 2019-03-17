@@ -10,6 +10,7 @@ describe('slow calculator', function() {
   var result = element(by.binding('latest'));
 
   beforeEach(function() {
+    console.info('********************************* Before Every Test from spec.js *********************************')
     browser.get('http://juliemr.github.io/protractor-demo/');
   });
   
